@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Dude Insta feed
+ * Plugin Name: Dude Instagram feed
  * Plugin URI: https://github.com/digitoimistodude/dude-insta-feed
  * Description: Fetches the latest images for user from Instagram
  * Version: 0.1.0
