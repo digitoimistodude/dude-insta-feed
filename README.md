@@ -103,4 +103,4 @@ Defaults to 600 (= ten minutes).
 To use with composer, run `composer require digitoimistodude/dude-insta-feed dev-master` in your project directory or add `"digitoimistodude/dude-insta-feed":"dev-master"` to your composer.json require.
 
 ## Contributing
-If you have ideas about the theme or spot an issue, please let us know. Before contributing ideas or reporting an issue about "missing" features or things regarding to the nature of that matter, please read [Please note section](#please-note-before-using). Thank you very much.
+If you have ideas about the plugin or spot an issue, please let us know. Before contributing ideas or reporting an issue about "missing" features or things regarding to the nature of that matter, please read [Please note section](#please-note-before-using). Thank you very much.
