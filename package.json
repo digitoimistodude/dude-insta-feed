@@ -1,0 +1,22 @@
+{
+  "name": "dude-insta-feed",
+  "version": "0.1.0",
+  "description": "WordPress plugin to get latest images from Instagram user feeds.",
+  "main": "dude-insta-feed.php",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digitoimistodude/dude-insta-feed.git"
+  },
+  "author": "Digitoimisto Dude Oy",
+  "license": "GPL2+",
+  "bugs": {
+    "url": "https://github.com/digitoimistodude/dude-insta-feed/issues"
+  },
+  "homepage": "https://github.com/digitoimistodude/dude-insta-feed"
+}
