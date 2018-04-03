@@ -51,7 +51,7 @@ add_filter( 'dude-insta-feed/access_token/user=USERID_HERE', function() { return
 
 ```php
 <?php
-$instagram_feed = dude_insta_feed()->get_user_images( '30821744' );
+$instagram_feed = dude_insta_feed()->get_user_images( 'USERID_HERE' );
 foreach ($instagram_feed['data'] as $item) : ?>
     <img src="<?php echo $item['images']['standard_resolution']['url']; ?>" alt="" />
 <?php endforeach; ?>
