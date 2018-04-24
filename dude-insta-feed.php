@@ -90,7 +90,7 @@ Class Dude_Insta_Feed {
 		);
 
 		$response = self::_call_api( $userid, apply_filters( 'dude-insta-feed/user_images_parameters', $parameters ) );
-		if( $response === FALSE )
+		if( $response === FALSE || is_wp_error( $response ) )
 			return;
 
 		$response = apply_filters( 'dude-insta-feed/user_images', json_decode( $response['body'], true ) );
