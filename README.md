@@ -37,8 +37,10 @@ Get images by calling function `dude_insta_feed()->get_user_images()`, pass user
 ### Usage example for displaying user feed
 
 1. Go to [instagram.com/developer](https://www.instagram.com/developer) and register an application for your WordPress site. **Please note** that application must be registered with that exact user account you want to pull images from!
-2. Generate access token by going to [this url](https://instagram.com/oauth/authorize/?client_id=[CLIENT_ID_HERE]&redirect_uri=http://localhost&response_type=token) and adding your CLIENT ID and REDIRECT URIs to their appropriate places and click **Authorize**.
-3. Get your user ID using [this tool](https://www.otzberg.net/iguserid/). Copy your user id and add it to following code in place of *USERID_HERE*. Get the code after `#access_token=` in the following URL and add this snippet to **functions.php**, copy the code to *CODE_HERE*:
+2. Disable Implicit oAuth2 from security for next step to work.
+3. Generate access token by going to [this url](https://instagram.com/oauth/authorize/?client_id=[CLIENT_ID_HERE]&redirect_uri=http://localhost&response_type=token) and adding your CLIENT ID and REDIRECT URIs to their appropriate places and click **Authorize**.
+5. Enable Implicit oAuth2 back.
+4. Get the code after `#access_token=` in the following URL and add this snippet to **functions.php**. Your user ID is in the beginning of access token, just before tge dot.
 
 ```php
 /**
@@ -47,7 +49,7 @@ Get images by calling function `dude_insta_feed()->get_user_images()`, pass user
 add_filter( 'dude-insta-feed/access_token/user=USERID_HERE', function() { return 'ACCESS_TOKEN_HERE'; } );
 ```
 
-4. Add this loop to wherever you want to display your images:
+6. Add this loop to wherever you want to display your images:
 
 ```php
 <?php
