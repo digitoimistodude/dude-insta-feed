@@ -3,11 +3,11 @@
  * Plugin Name: Dude Instagram feed
  * Plugin URI: https://github.com/digitoimistodude/dude-insta-feed
  * Description: Fetches the latest images for user from Instagram.
- * Version: 0.1.0
+ * Version: 0.1.1
  * Author: Digitoimisto Dude Oy, Timi Wahalahti
  * Author URI: https://www.dude.fi
  * Requires at least: 4.4.2
- * Tested up to: 4.7.2
+ * Tested up to: 5.2
  *
  * Text Domain: dude-insta-feed
  * Domain Path: /languages
