@@ -90,8 +90,10 @@ Class Dude_Insta_Feed {
 		);
 
 		$response = self::_call_api( $userid, apply_filters( 'dude-insta-feed/user_images_parameters', $parameters ) );
-		if( $response === FALSE || is_wp_error( $response ) )
+		if( $response === FALSE || is_wp_error( $response ) ) {
+			set_transient( $transient_name, $response, apply_filters( 'dude-insta-feed/user_images_lifetime', '600' ) / 2 );
 			return;
+		}
 
 		$response = apply_filters( 'dude-insta-feed/user_images', json_decode( $response['body'], true ) );
 		set_transient( $transient_name, $response, apply_filters( 'dude-insta-feed/user_images_lifetime', '600' ) );
@@ -110,7 +112,7 @@ Class Dude_Insta_Feed {
 		$response = wp_remote_get( 'https://api.instagram.com/v1/users/'.$userid.'/media/recent/?'.$parameters );
 		return $response;
 
-		if( $response['response']['code'] !== 200 ) {
+		if( is_wp_error( $response ) || $response['response']['code'] !== 200 ) {
 			self::_write_log( 'response status code not 200 OK, user: '.$userid );
 			return false;
 		}
