@@ -5,6 +5,10 @@ Basically this plugin fetches images from Instagram, saves those to transient an
 
 Handcrafted with love at [Digitoimisto Dude Oy](http://dude.fi), a Finnish boutique digital agency in the center of Jyväskylä.
 
+## NOTE!
+
+**This plugin does not work so well after Instagram has tightened their API usage. Better plugin to use is [image-user-feed](https://github.com/digitoimistodude/image-user-feed) which bypassed the official API.**
+
 ## Table of contents
 1. [Please note before using](#please-note-before-using)
 2. [License](#license)
