@@ -7,7 +7,7 @@ Handcrafted with love at [Digitoimisto Dude Oy](http://dude.fi), a Finnish bouti
 
 ## NOTE!
 
-**This plugin does not work so well after Instagram has tightened their API usage. Better plugin to use is [image-user-feed](https://github.com/digitoimistodude/image-user-feed) which bypassed the official API.**
+**DEPRECATED! This plugin does not work so well after Instagram has tightened their API usage. Better plugin to use is [ig-graph-feed](https://github.com/jake-101/ig-graph-feed) by Jake Peterson or our [image-user-feed](https://github.com/digitoimistodude/image-user-feed) which bypass the official API.**
 
 ## Table of contents
 1. [Please note before using](#please-note-before-using)
